@@ -1,11 +1,18 @@
-# Modern Fortran for Science
+# Modern Fortran for Science (aka to read some legacy code)
 
-+ ! Use mainly `gfortran`, if `flang` miss any counterparts , report a bug.
++  Use`gfortran` only, but if a function is missing from `flang`, report a bug.
 + For sci means 100% confidence about the result
 
 + 95 -> modular, array, generic
 + 03 -> oop
 + 08/18 -> parallel
+
+# Types
+by default int is 4 bytes, and can be changed by
+```fortran
+int(i,kind=2) !2bytes
+int(i,kind=8) !8bytes
+```
 
 # Quick links
 
